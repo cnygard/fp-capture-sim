@@ -1,0 +1,26 @@
+[project]
+name = "fp-capture-sim"
+version = "0.1.0"
+description = "Monte Carlo capture simulation for macroscopic Fourier ptychography"
+readme = "README.md"
+authors = [
+    { name = "Christian Nygard", email = "seajay.nygard@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.5.3",
+    "torch>=2.14.0",
+    "matplotlib>=3.11.2",
+    "opencv-python>=5.0.0.93",
+    "tqdm>=4.70.1",
+]
+
+[project.optional-dependencies]
+gui = ["PySide6>=6.10,<7"]
+
+[project.scripts]
+fp-capture-sim = "fp_capture_sim:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.cache/
+.tmp/
+/captures/
+all_noise/
+.venv/
+dist/
